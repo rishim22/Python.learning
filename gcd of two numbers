@@ -1,0 +1,5 @@
+def swapp(a,b):
+    while b!=0:
+        a,b=b,a%b 
+    return a 
+print(swapp(36,60))
