@@ -1,0 +1,12 @@
+pow(2,50)
+def power(a,c):
+    if c==0:
+        return 1
+    result=power(a,c//2)
+    ans=(result*result)
+    if c%2==0:
+        return ans
+    else:
+        return (a*ans)
+print(power(2,50))
+    
