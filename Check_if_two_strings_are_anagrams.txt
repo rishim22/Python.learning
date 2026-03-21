@@ -1,0 +1,16 @@
+"""Check if two strings are anagrams
+Same characters
+Same frequency
+Order doesn’t matter"""
+s="rishi is a good  boy yob ishir"
+w=s.split()
+
+freq={}
+for words in w:
+    s="".join(sorted(words))
+    if s in freq:
+       freq[s].append(words)
+    else:
+        freq[s]=[words]
+print(freq)
+

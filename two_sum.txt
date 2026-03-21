@@ -1,0 +1,12 @@
+nums = [2, 7, 11, 15]
+target = 9
+mapp={}
+for i in range(len(nums)):
+    num=nums[i]
+    
+    diff=target - num
+    if diff in mapp:
+        print(diff,nums[i])
+        
+    mapp[num]=i
+    
