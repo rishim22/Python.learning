@@ -1,0 +1,11 @@
+#linear search
+def linearr(arr,target):
+    for i in range(len(arr)):
+        if arr[i]==target:
+            return i
+        else:
+            i+=1
+    return -1
+arr=[1,2,4,6,3,2]
+print(linearr(arr,6))
+    
