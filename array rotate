@@ -1,0 +1,7 @@
+#Rotate Array
+#Output: [4,5,1,2,3]
+a=[1,2,3,4,5]
+k=2
+r=len(a)%2
+res= a[r:] + a[:r]
+print(res)
